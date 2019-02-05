@@ -1,0 +1,120 @@
+//style for about block
+.about
+  padding: 140px 0
+  .container
+    position: relative
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    padding-left: 415px
+    .marketing
+      position: absolute
+      top: 50px
+      left: -200px
+
+
+    .about__inner
+      display: flex
+      flex-direction: column
+      max-width: 700px
+      margin-bottom: 100px
+      .title
+        color: #3c3c3c
+        font-family: $secondaryFont
+        font-size: em(50)
+        font-weight: 900
+        line-height: 51.81px
+        margin-bottom: 65px
+        padding-left: 120px
+      .list
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 65px
+        &__item
+          display: flex
+          flex-direction: row
+          align-items: center
+          color: #4f4f4f
+          font-size: em(19)
+          font-weight: 700
+          line-height: em(20)
+      .load
+        max-width: 235px
+        padding: 10px 30px
+        box-shadow: 7px 12px 26px 1px rgba(88, 39, 39, 0.27)
+        background-color: #fa4a33
+        color: #ffffff
+        font-size: 20px
+        border-radius: 30px
+        text-align: center
+        transition: 0.4s
+        &:hover
+          transform: scale(1.05)
+  .post__price
+    flex-direction: column
+    align-items: center
+    .title
+      color: #3c3c3c
+      font-family: $secondaryFont
+      font-size: em(50)
+      font-weight: 900
+      line-height: 50px
+      margin-bottom: 65px
+      .sub
+        color: #fa4a33
+    .post__inner
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-around
+      align-items: flex-start
+      .item
+        display: flex
+        flex-direction: column
+        align-items: center
+        max-width: 270px
+        margin: 5px
+        img
+          margin-bottom: 30px
+          max-height: 105px
+        .subtitle
+          text-align: center
+          color: #4f4f4f
+          font-size: em(19)
+          font-weight: 700
+          line-height: 28.13px
+//style for about block mobile version
++size(phone)
+  .about
+    padding: 0
+    .container
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 0
+      .marketing
+        position: relative
+        max-width: 300px
+        left: 0
+        right: 0
+        top: 5px
+
+      .about__inner
+        flex-direction: column
+        align-items: center
+        .title
+          padding: 0
+          margin: 0
+        .list
+          .list__item
+            font-size: em(16)
+    .post__price
+      .title
+        text-align: center
+
+
+
+
+
+

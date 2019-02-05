@@ -1,0 +1,51 @@
+//style for FAQ block & accordion
+.faq
+  .container
+    display: flex
+    flex-direction: column
+    .titles
+      color: #3c3c3c
+      font-family: $secondaryFont
+      font-size: 50px
+      font-weight: 900
+      line-height: em(35)
+
+    .wrap
+      max-width: 800px
+    .input
+      display: none
+    .subtitle
+      overflow: hidden
+      height: 0
+      position: relative
+      transition: height 0.5s ease
+      border-bottom: 1px dotted black
+      font-size: em(19)
+      font-weight: 400
+      line-height: em(20)
+    .title
+      position: relative
+      display: block
+      color: #4f4f4f
+      font-size: em(25)
+      font-weight: 700
+      cursor: pointer
+      line-height: em(25)
+
+      &:after
+        content: '\f107'
+        font-family: FontAwesome
+        position: absolute
+        width: 24px
+        height: 24px
+        right: 13px
+        top: 7px
+
+    .input:checked
+      .title:after
+        content: '\f106'
+      ~.title
+        color: #0d3693
+      ~.subtitle
+        transition: 0.3s
+        height: 75px

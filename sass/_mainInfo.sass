@@ -1,0 +1,101 @@
+//main info styles
+.mainInfo
+  background: url("../img/header/mainInfoBg.jpg") no-repeat center center / cover
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  box-sizing: border-box
+
+  .container
+    flex-direction: column
+    align-items: center
+    .title
+      color: #f8fcff
+      font-family: $secondaryFont
+      font-size: 80px
+      font-weight: 900
+
+
+    .subtitle
+      color: #f8fcff
+      font-size: em(40)
+      max-width: 930px
+      text-align: center
+      margin-bottom: 55px
+    .header__contacts
+      color: #ffffff
+      font-family: $secondaryFont
+      font-size: em(36)
+      font-weight: 700
+    .price
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      max-width: 320px
+      margin: 55px 0
+      .arrow
+        width: 320px
+        display: block
+      &__item
+        color: #fa4a33
+        font-family: $secondaryFont
+        font-size: em(45)
+        font-weight: 900
+        line-height: 23.51px
+        position: absolute
+        padding-left: 40px
+    .link
+      box-sizing: border-box
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      padding: 30px 0
+      .skype_button, .mail_button
+        display: flex
+        flex-direction: row
+
+        align-items: center
+        color: #ffffff
+        font-size: em(30)
+        font-weight: 700
+        line-height: em(30)
+        margin: 0 40px
+        height: 100px
+
+        &:hover
+          text-shadow: 0 0 15px #ffffff
+//styles for mobile version
++size(phone)
+  .mainInfo
+
+    padding: 0 30px
+    .container
+      flex-direction: column
+      align-items: center
+
+
+      .title
+        text-align: center
+      .header__contacts
+        text-align: center
+      .link
+        display: flex
+        flex-direction: column
+        align-items: center
+
+
+        .skype_button, .mail_button
+          display: flex
+          flex-direction: row
+          padding: 0
+          margin: 0
+          font-size: em(16)
+
+
+      .header__contacts
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+

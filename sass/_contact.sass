@@ -1,0 +1,43 @@
+//style for contact block
+.contact
+  background: url("../img/contact/contact_bg.jpg") no-repeat center center / cover
+  padding: 60px 0
+  .container
+    flex-direction: column
+    align-items: center
+    .title
+      color: #ffffff
+      font-family: $secondaryFont
+      font-size: em(50)
+      font-weight: 900
+    .link
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
+      .location_button, .skype_button, .mail_button
+        display: flex
+        flex-direction: row
+        align-items: center
+        color: #ffffff
+        font-size: em(19)
+        font-weight: 700
+
+        img
+          max-height: 140px
+        &:hover
+          text-shadow: 0 0 15px #ffffff
+      .location_button
+        max-width: 300px
+
+//style for contact block mobile version
++size(phone)
+  .contact
+    .container
+      .title
+        font-size: em(40)
+      .link
+        .location_button, .skype_button, .mail_button
+          font-size: em(16)
+

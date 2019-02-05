@@ -1,0 +1,113 @@
+//style for post block
+.post
+  padding: 140px 0
+  .container
+    position: relative
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    padding-left: 415px
+    margin-bottom: 160px
+    .marketing
+      position: absolute
+      top: 50px
+      left: -200px
+
+
+    .post__inner
+      display: flex
+      flex-direction: column
+      max-width: 700px
+      margin-bottom: 100px
+      .title
+        color: #3c3c3c
+        font-family: $secondaryFont
+        font-size: em(50)
+        font-weight: 900
+        line-height: 50px
+        margin-bottom: 65px
+
+      .list
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 65px
+        &__item
+          display: flex
+          flex-direction: row
+          align-items: center
+          color: #4f4f4f
+          font-size: em(19)
+          font-weight: 700
+          line-height: em(20)
+      .load
+        max-width: 235px
+        padding: 10px 15px
+        box-shadow: 7px 12px 26px 1px rgba(88, 39, 39, 0.27)
+        background-color: #fa4a33
+        color: #ffffff
+        font-size: 20px
+        border-radius: 30px
+        text-align: center
+        transition: 0.4s
+        &:hover
+          transform: scale(1.05)
+  .wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    .post__list
+      flex-direction: column
+      align-items: center
+      max-width: 310px
+      text-align: center
+      .title
+        color: #0d3693
+        font-size: em(19)
+        line-height: 29.13px
+        font-weight: 700
+      .price
+        color: #4f4f4f
+        font-size: em(22)
+        font-weight: 700
+
+      .subtitle
+        color: #4f4f4f
+        font-size: em(22)
+      .price__img
+        margin-bottom: 40px
+
+
+
+
+
+//style for post block mobile version
++size(phone)
+  .post
+    padding: 30px 0
+    .container
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 0
+      margin-bottom: 40px
+      .marketing
+        position: relative
+        max-width: 300px
+        left: 0
+        right: 0
+        top: 5px
+
+      .post__inner
+        flex-direction: column
+        align-items: center
+        .title
+          padding: 10px 0
+          margin: 0
+        .list
+          padding: 0 15px
+          .list__item
+            font-size: em(16)
+            text-align: center
+

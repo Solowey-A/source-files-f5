@@ -1,0 +1,146 @@
+//style for why_us block
+.why_us
+  padding: 140px 0
+  overflow-x: hidden
+  .container
+    position: relative
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    padding-right: 415px
+    overflow-x: fragments
+    .marketing
+      position: absolute
+      top: 50px
+      right: -200px
+
+    .why__inner
+      display: flex
+      flex-direction: column
+      max-width: 700px
+      margin-bottom: 100px
+      .title
+        color: #3c3c3c
+        font-family: $secondaryFont
+        font-size: em(50)
+        font-weight: 900
+        line-height: 51.81px
+        margin-bottom: 65px
+
+      .list
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 65px
+        &__item
+          display: flex
+          flex-direction: row
+          align-items: center
+          color: #4f4f4f
+          font-size: em(19)
+          font-weight: 700
+          line-height: em(20)
+      .load
+        max-width: 235px
+        padding: 10px 30px
+        box-shadow: 7px 12px 26px 1px rgba(88, 39, 39, 0.27)
+        background-color: #fa4a33
+        color: #ffffff
+        font-size: 20px
+        border-radius: 30px
+        text-align: center
+        transition: 0.4s
+        &:hover
+          transform: scale(1.05)
+  .feature
+    margin: 0 auto
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    .title
+      text-align: center
+      color: #3c3c3c
+      font-family: $secondaryFont
+      font-size: em(40)
+      font-weight: 900
+    .item_wrap
+      padding: 50px 0
+      max-width: 1170px
+      width: 100%
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: center
+      .item
+        display: flex
+        flex-direction: row
+        max-width: 520px
+        width: 100%
+        justify-content: space-between
+        margin: 10px
+        img
+          max-height: 100px
+        .description
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          max-width: 380px
+          width: 100%
+          .title
+            color: #0d3693
+            font-size: em(30)
+          .subtitle
+            color: #4f4f4f
+            font-size: em(19)
+            font-weight: 700
+            line-height: 30px
+
+
+
++size(phone)
+  .why_us
+    padding: 0
+    .container
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 0
+      .marketing
+        position: relative
+        max-width: 300px
+        left: 0
+        right: 0
+        top: 5px
+
+      .why__inner
+        flex-direction: column
+        align-items: center
+        .title
+          padding: 0
+          margin: 0
+          font-size: em(35)
+        .list
+          box-sizing: border-box
+          padding: 0 15px
+          .list__item
+            font-size: em(16)
+            font-weight: 600
+    .feature
+      .title
+        font-size: em(25)
+        padding: 40px 0 0
+      .item_wrap
+        .item
+          flex-direction: column
+          align-items: center
+
+          .description
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 10px
+            .title, .subtitle
+              text-align: center
+
+
